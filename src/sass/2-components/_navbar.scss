@@ -1,0 +1,99 @@
+@import '../1-helpers/variables';
+@import '../1-helpers/mixins';
+
+.nav-options {
+  position: fixed;
+  width: 100%;
+  padding: 20px 20px;
+  transition: 850ms;
+
+  @include dekstop {
+    padding: 20px 450px;
+  }
+}
+
+.nav-options.active {
+  background-color: $dark-brown;
+  padding: 10px 30px;
+  transition: 350ms;
+
+  @include dekstop {
+    padding: 10px 450px;
+  }
+}
+
+.logo-couveejson.active {
+  width: 40px;
+  height: auto;
+}
+
+.nav-bars-icon {
+  width: $icon-size;
+  height: $icon-size;
+}
+
+.instagram-icon {
+  width: $icon-size;
+  height: $icon-size;
+}
+
+.nav-toggle {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  outline: none;
+}
+
+.nav-close {
+  width: 40px;
+  height: 40px;
+}
+
+.nav-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: -100%;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  transition: 850ms;
+  z-index: 999;
+}
+
+.nav-menu.active {
+  bottom: 0;
+  transition: 350ms;
+}
+
+.nav-menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.overlay-logo {
+  margin-bottom: 50px;
+
+  @include dekstop {
+    margin-bottom: 90px;
+  }
+}
+
+.nav-title {
+  font-size: 18px;
+  margin: 10px 0;
+
+  @include dekstop {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+}
+
+.nav-title:hover {
+  transform: scale(1.2);
+  transition: 350ms;
+}
