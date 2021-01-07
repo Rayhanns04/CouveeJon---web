@@ -1,9 +1,25 @@
-.hero-banner-img {
-  width: 100%;
-  height: 100%;
-}
-.text-logo {
-  top: 45%;
-  left: 34%;
-  z-index: 1;
+@import '../1-helpers/variables';
+@import '../1-helpers/mixins';
+
+.hero {
+  .hero-banner-img {
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+  }
+  .text-logo {
+    width: 70%;
+    height: auto;
+    top: 48%;
+    left: 14%;
+    z-index: 1;
+    @include dekstop {
+      width: 684px;
+      top: 45%;
+      left: 34%;
+    }
+  }
 }

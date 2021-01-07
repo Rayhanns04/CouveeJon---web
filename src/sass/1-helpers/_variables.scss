@@ -1,7 +1,14 @@
+$font-regular: Montserrat;
 $font-medium: Montserrat Medium;
 $font-semiBold: Montserrat SemiBold;
-$dark-purple: #613f75;
 $white: #ffffff;
+$dark-brown: #c8a27b;
 $f-16: 16px;
 $icon-size: 25px;
-$dark-brown: #c8a27b;
+$font-weight: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+);
+$padding-left-center: 450px;
+$padding-right-center: 450px;

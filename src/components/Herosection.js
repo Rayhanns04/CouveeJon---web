@@ -6,12 +6,8 @@ import '../sass/main.scss';
 const Herosection = () => {
   return (
     <>
-      <div className="hero-banner">
-        <img
-          src={HeroBanner}
-          alt="hero-banner"
-          className="hero-banner-img"
-        ></img>
+      <div className="hero">
+        <img src={HeroBanner} alt="hero-banner" className="hero-banner-img" />
         <img src={TextLogo} alt="text-logo" className="text-logo absolute" />
       </div>
     </>
