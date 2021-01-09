@@ -1,5 +1,9 @@
 @import './1-helpers/mixins';
 @import './1-helpers/variables';
+
+// Components ----------------------------
 @import './2-components/navbar';
 @import './2-components/herosection';
 @import './2-components/story';
+@import './2-components/productsHome';
+@import './2-components/popup';

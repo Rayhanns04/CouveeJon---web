@@ -1,14 +1,35 @@
 $font-regular: Montserrat;
 $font-medium: Montserrat Medium;
 $font-semiBold: Montserrat SemiBold;
+
 $white: #ffffff;
 $dark-brown: #c8a27b;
+$secondary-grey: #4f4f4f;
+
 $f-16: 16px;
 $icon-size: 25px;
+
+$fonts: (
+  'light': Nunito Sans Light,
+  'regular': Nunito Sans,
+  'medium': Nunito Sans SemiBold,
+  'semi-bold': Montserrat SemiBold,
+);
+
 $font-weight: (
   'regular': 400,
   'medium': 500,
   'bold': 700,
 );
-$padding-left-center: 450px;
-$padding-right-center: 450px;
+
+$font-sizes: (
+  's-extra-mini': 12px,
+  's-small': 14px,
+  's-regular': 16px,
+  's-medium': 18px,
+  's-large': 24px,
+  's-extra-large': 36px,
+);
+
+$padding-container-dekstop: 0 400px 0 400px;
+$padding-container-mobile: 0 15px 0 15px;

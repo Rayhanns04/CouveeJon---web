@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.imgur.com/HNVO4hc.jpg",
+        "title": "Matcha Latte",
+        "desc": "Creamy and leafy, the best twist of Japanese classic drink.",
+        "price": "15000"
+    },
+    {
+        "id": 2,
+        "img": "https://i.imgur.com/XTgmxaa.jpg",
+        "title": "Red Velvet Latte",
+        "desc": "Our favorite red velvet drink with cream cheese notes.",
+        "price": "35000"
+    },
+    {
+        "id": 3,
+        "img": "https://i.imgur.com/qroKrON.jpg",
+        "title": "Dark Chocolate",
+        "desc": "Bold and intense dark chocolate with a bit touch of sweetness.",
+        "price": "18500"
+    },
+    {
+        "id": 4,
+        "img": "https://i.imgur.com/Ypu8DkA.jpg",
+        "title": "Black Cookie Latte",
+        "desc": "A classic drink with chocolate cookies and vanilla cream.",
+        "price": "15500"
+    },
+    {
+        "id": 5,
+        "img": "https://i.imgur.com/TaHZR92.jpg",
+        "title": "Mellaca",
+        "desc": "Our signature caffe latte sweetened with premium palm sugar.",
+        "price": "15000"
+    },
+    {
+        "id": 6,
+        "img": "https://i.imgur.com/nyjB1Uy.jpg",
+        "title": "Caramel Machiato",
+        "desc": "Caramel latte with less coffee and delightful caramel sauce on top.",
+        "price": "19000"
+    }
+]

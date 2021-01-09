@@ -1,0 +1,122 @@
+@import '../1-helpers/variables';
+@import '../1-helpers/mixins';
+
+.prd-hm-container {
+  position: relative;
+  padding: $padding-container-mobile;
+  margin-bottom: 50px;
+  overflow: hidden;
+  margin-top: 80px;
+
+  @include dekstop {
+    position: unset;
+    width: 1130px;
+    padding: 0;
+    margin: 200px 400px 90px 400px;
+    padding-bottom: 100px;
+  }
+}
+
+.prd-hm-heading {
+  font-family: map-get($fonts, light);
+  font-size: map-get($font-sizes, s-large);
+  font-weight: map-get($font-weight, medium);
+  text-align: left;
+  display: block;
+  margin-bottom: 50px;
+
+  @include dekstop {
+    font-size: map-get($font-sizes, s-extra-large);
+  }
+}
+
+.prd-hm-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.swiper-each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    width: 336.66px;
+    height: 100%;
+    margin: 0 0 25px 0;
+  }
+
+  h1 {
+    font-family: map-get($fonts, light);
+    font-size: map-get($font-sizes, s-large);
+  }
+}
+
+.swiper-image-ctr {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.swiper-item-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  height: 20%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  @include dekstop {
+    top: 0;
+    height: 93%;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+
+  h3 {
+    font-family: map-get($fonts, regular);
+    font-size: map-get($font-sizes, s-large);
+    color: #ffffff;
+  }
+}
+
+.swiper-item-overlay:hover {
+  @include dekstop {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.swiper-item-overlay-icon {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.prd-hm-btn {
+  width: 170px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: $dark-brown;
+  color: white;
+
+  p {
+    font-family: map-get($fonts, light);
+    font-size: map-get($font-sizes, s-extra-mini);
+    height: 100%;
+    letter-spacing: 3px;
+    font-weight: map-get($font-weight, bold);
+  }
+
+  @include dekstop {
+  }
+  transition: all 0.3s ease;
+}
+
+.prd-hm-btn:hover {
+  transform: translateY(-5px);
+}

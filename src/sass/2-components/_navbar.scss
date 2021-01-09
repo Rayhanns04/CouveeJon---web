@@ -26,13 +26,13 @@
 .logo-couveejson.active {
   width: 40px;
   height: auto;
+  filter: brightness(0) invert(2);
 }
 
 .nav-bars-icon {
   width: $icon-size;
   height: $icon-size;
 }
-
 .instagram-icon {
   width: $icon-size;
   height: $icon-size;

@@ -36,7 +36,12 @@ const Navbar = () => {
           }
         >
           <Link>
-            <FiIcons.FiInstagram className="instagram-icon" />
+            <FiIcons.FiInstagram
+              className={
+                navbarSticky ? 'instagram-icon active' : 'instagram-icon'
+              }
+              color={navbarSticky ? '#FFFF' : 'black'}
+            />
           </Link>
           <Link to="#" className="logo">
             <img
@@ -48,9 +53,15 @@ const Navbar = () => {
             />
           </Link>
           <Link to="#" className="nav-bars" onClick={showSidebar}>
-            <FaIcons.FaBars className="nav-bars-icon" />
+            <FaIcons.FaBars
+              className={
+                navbarSticky ? 'nav-bars-icon active' : 'nav-bars-icon'
+              }
+              color={navbarSticky ? '#FFFF' : 'black'}
+            />
           </Link>
         </div>
+
         {/* Sidetop ---------------------------- */}
         <nav className={sideShow ? 'nav-menu active' : 'nav-menu'}>
           <Link to="#" className="nav-toggle" onClick={showSidebar}>
