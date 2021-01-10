@@ -1,0 +1,140 @@
+@import '../1-helpers/variables';
+@import '../1-helpers/mixins';
+
+.comp-promo {
+  background-image: url('https://www.couvee.co.id/wp-content/uploads/2019/07/decoration-3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 393.406px;
+  background-position: 50% 70%;
+  margin: 0px 0 100px 0;
+}
+
+.comp-promo-container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: scale(0.7);
+  top: -20px;
+
+  @include dekstop {
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 1110px;
+    transform: unset;
+    top: unset;
+  }
+}
+
+.comp-promo-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  width: 520px;
+  height: 203px;
+  padding: 10px;
+  margin: 10px -75px 10px -75px;
+
+  @include dekstop {
+    margin: 100px auto;
+  }
+}
+
+.comp-promo-thumb {
+  position: relative;
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+
+.tape-promo {
+  position: absolute;
+  top: 10px;
+  left: -35px;
+  background-size: contain;
+  padding: 10px 45px 10px;
+  line-height: 1;
+  background-position: center;
+  transform: rotate(-25deg);
+  transform-origin: center;
+  text-align: center;
+  font-family: map-get($fonts, medium);
+  font-size: map-get($font-sizes, s-extra-mini);
+  background-image: url(../../assets/img/pita.png);
+}
+
+.comp-promo-content {
+  position: relative;
+  width: 100%;
+  word-break: break-all;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h6 {
+    font-family: map-get($fonts, medium);
+    font-size: map-get($font-sizes, s-medium);
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: map-get($fonts, regular);
+    font-size: map-get($font-sizes, s-small);
+    text-align: left;
+  }
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  p {
+    font-family: map-get($fonts, regular);
+    font-size: map-get($font-sizes, s-small);
+    text-align: left;
+  }
+}
+
+.comp-promo-readmore {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  p {
+    font-family: map-get($fonts, light);
+    font-size: map-get($font-sizes, s-small);
+    text-align: left;
+    line-height: 100%;
+  }
+
+  .readmore-arrow-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.comp-promo-readmore:hover {
+  color: $dark-brown;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin: -10px 0 0 -10px;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  -webkit-animation: sbi-sk-scaleout 1s infinite ease-in-out;
+  animation: sbi-sk-scaleout 1s infinite ease-in-out;
+}
