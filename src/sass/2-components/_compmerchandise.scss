@@ -1,0 +1,123 @@
+@import '../1-helpers/variables';
+@import '../1-helpers/mixins';
+
+.mrch-container {
+  position: relative;
+  padding: $padding-container-mobile;
+  margin-bottom: 50px;
+  margin-top: 80px;
+
+  h1 {
+    font-family: map-get($fonts, regular);
+    font-size: map-get($font-sizes, s-large);
+    font-weight: map-get($font-weight, medium);
+    text-align: left;
+    display: block;
+    margin-bottom: 50px;
+
+    @include dekstop {
+      font-size: map-get($font-sizes, s-extra-large);
+    }
+  }
+
+  @include dekstop {
+    position: unset;
+    width: 1130px;
+    padding: 0;
+    margin: 200px 400px 0 400px;
+  }
+}
+
+.mrch-catalog {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: -30px;
+  justify-content: space-between;
+  height: 1052px;
+
+  img {
+    width: 344px;
+    height: auto;
+  }
+
+  @include dekstop {
+    justify-content: space-between;
+    flex-direction: row;
+    height: unset;
+    margin-top: 100px;
+
+    img:nth-child(2) {
+      top: 50px;
+      position: absolute;
+      right: 395px;
+    }
+
+    img:nth-child(3) {
+      top: -50px;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
+
+.mrch-button {
+  display: flex;
+  width: 360px;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: nowrap;
+  margin: 50px auto;
+
+  button:nth-child(1) {
+    width: 170px;
+    padding: 15px;
+    outline: none;
+    border: none;
+    background-color: $dark-brown;
+    color: white;
+    font-family: map-get($fonts, light);
+    font-size: map-get($font-sizes, s-extra-mini);
+    height: 100%;
+    letter-spacing: 3px;
+    font-weight: map-get($font-weight, bold);
+    transition: all 0.3s ease;
+  }
+
+  button:nth-child(1):hover {
+    transform: translateY(-5px);
+  }
+
+  button:nth-child(2) {
+    width: 170px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid $dark-brown;
+    background: none;
+    margin-top: 20px;
+    color: $dark-brown;
+    font-family: map-get($fonts, light);
+    font-size: map-get($font-sizes, s-extra-mini);
+    height: 100%;
+    letter-spacing: 3px;
+    font-weight: map-get($font-weight, bold);
+    transition: all 0.3s ease;
+  }
+
+  button:nth-child(2):hover {
+    transform: translateY(-5px);
+  }
+
+  @include dekstop {
+    flex-direction: row;
+    height: unset;
+    margin: 100px auto;
+
+    button:nth-child(2) {
+      margin-top: unset;
+    }
+  }
+}

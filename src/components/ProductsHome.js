@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import '../sass/main.scss';
-import { SummaryMenuCollection } from '../api/Api';
 import * as GoIcons from 'react-icons/go';
 
 import SwiperCore, {

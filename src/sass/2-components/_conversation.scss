@@ -1,0 +1,74 @@
+@import '../1-helpers/variables';
+@import '../1-helpers/mixins';
+
+.conversation-container {
+  background-image: url('https://www.couvee.co.id/wp-content/uploads/2019/07/decoration-3.jpg');
+  background-repeat: repeat-x;
+  background-size: 1373px;
+  width: auto;
+  height: 512px;
+  background-position: 50% 70%;
+  margin-top: -40px;
+}
+
+.conversation-content {
+  position: relative;
+  margin: $padding-container-mobile;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 130px;
+
+  @include dekstop {
+    padding-top: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: $margin-container-dekstop;
+  }
+}
+
+.conversation-box {
+  position: absolute;
+  padding: 20px 33px;
+  width: 310px;
+  right: unset;
+  left: 10px;
+  margin: 10px auto;
+  bottom: -100px;
+  background-color: #ffffff;
+  word-break: break-all;
+
+  h1 {
+    font-family: map-get($fonts, light);
+    font-size: map-get($font-sizes, s-small);
+    line-height: 100%;
+    text-align: left;
+  }
+
+  @include dekstop {
+    padding: 25px 33px;
+    right: 50px;
+    bottom: 50px;
+    width: 370px;
+    left: unset;
+    margin: unset;
+    h1 {
+      font-size: map-get($font-sizes, s-large);
+    }
+  }
+}
+
+.conversation-img {
+  max-width: 100%;
+  margin-top: -20px;
+}
+
+.c-dcr {
+  display: none;
+  @include dekstop {
+    display: block;
+    position: absolute;
+    left: 40px;
+    bottom: -40px;
+  }
+}

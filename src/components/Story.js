@@ -2,8 +2,6 @@ import React from 'react';
 import StoryImage from '../assets/img/story.jpg';
 import '../sass/main.scss';
 import * as BsIcons from 'react-icons/bs';
-import decoration1 from '../assets/img/decoration-1.jpg';
-import decoration2 from '../assets/img/decoration-2.jpg';
 
 const Story = () => {
   return (
@@ -23,10 +21,18 @@ const Story = () => {
           </button>
         </div>
         <div className="story-img">
-          <img src={decoration2} alt="decoration-2" className="sty-dcr-2" />
+          <img
+            src="https://www.couvee.co.id/wp-content/uploads/2019/07/decoration-2.jpg"
+            alt="decoration-2"
+            className="sty-dcr-2"
+          />
           <img src={StoryImage} alt="story-img" />
         </div>
-        <img src={decoration1} alt="decoration-1" className="sty-dcr-1" />
+        <img
+          src="https://www.couvee.co.id/wp-content/uploads/2019/07/decoration-1.jpg"
+          alt="decoration-1"
+          className="sty-dcr-1"
+        />
       </div>
     </>
   );

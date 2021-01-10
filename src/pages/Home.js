@@ -1,4 +1,7 @@
 import React from 'react';
+import CompLocation from '../components/CompLocation';
+import CompMerchandise from '../components/CompMerchandise';
+import CompPromo from '../components/CompPromo/CompPromo';
 import Conversation from '../components/Conversation';
 import Herosection from '../components/Herosection';
 import Navbar from '../components/Navbar/Navbar';
@@ -12,7 +15,10 @@ const Home = () => {
       <Herosection />
       <Story />
       <ProductsHome />
-      {/* <Conversation /> */}
+      <Conversation />
+      <CompLocation />
+      <CompMerchandise />
+      <CompPromo />
     </div>
   );
 };
