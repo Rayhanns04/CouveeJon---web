@@ -4,6 +4,7 @@ import CompMerchandise from '../components/CompMerchandise';
 import CompPromo from '../components/CompPromo/CompPromo';
 import CompSocialMediaSection from '../components/CompSocialMediaSection';
 import Conversation from '../components/Conversation';
+import Footer from '../components/Footer';
 import Herosection from '../components/Herosection';
 import Navbar from '../components/Navbar/Navbar';
 import ProductsHome from '../components/ProductsHome';
@@ -22,6 +23,7 @@ const Home = () => {
       <CompMerchandise />
       <CompPromo />
       <CompSocialMediaSection />
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import React from 'react';
 import Logo from '../assets/img/logo-black.png';
-import Instagram from '../assets/icons/Instagram.svg';
 import '../sass/main.scss';
 
 const CompSocialMediaSection = () => {

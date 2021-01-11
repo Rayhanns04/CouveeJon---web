@@ -1,6 +1,6 @@
-$font-regular: Montserrat;
-$font-medium: Montserrat Medium;
-$font-semiBold: Montserrat SemiBold;
+$font-regular: Nunito;
+$font-medium: Nunito SemiBold;
+$font-semiBold: Nunito SemiBold;
 
 $white: #ffffff;
 $dark-brown: #c8a27b;
@@ -10,10 +10,10 @@ $f-16: 16px;
 $icon-size: 25px;
 
 $fonts: (
-  'light': Nunito Sans Light,
-  'regular': Nunito Sans,
-  'medium': Nunito Sans SemiBold,
-  'semi-bold': Montserrat SemiBold,
+  'light': Nunito Light,
+  'regular': Nunito,
+  'medium': Nunito SemiBold,
+  'semi-bold': Nunito Bold,
 );
 
 $font-weight: (

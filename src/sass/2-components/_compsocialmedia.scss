@@ -9,7 +9,7 @@
   align-items: center;
 
   h1 {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: map-get($fonts, medium);
     font-size: map-get($font-sizes, s-extra-large);
     text-align: center;
     margin-top: 20px;
@@ -22,6 +22,6 @@
   }
 
   @include dekstop {
-    margin: 100px 400px;
+    margin: 150px 400px;
   }
 }
