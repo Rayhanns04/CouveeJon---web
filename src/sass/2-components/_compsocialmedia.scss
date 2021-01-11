@@ -2,7 +2,7 @@
 @import '../1-helpers/mixins';
 
 .home-scm-container {
-  margin: $margin-container-mobile;
+  margin: 0 0 150px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 
   h1 {
     font-family: map-get($fonts, medium);
-    font-size: map-get($font-sizes, s-extra-large);
+    font-size: map-get($font-sizes, s-large);
     text-align: center;
     margin-top: 20px;
   }
@@ -22,6 +22,10 @@
   }
 
   @include dekstop {
-    margin: 150px 400px;
+    h1 {
+      font-size: map-get($font-sizes, s-extra-large);
+    }
+
+    margin: 0 400px 150px 400px;
   }
 }
