@@ -27,39 +27,39 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="nav-container">
+      <div>
         <div
           className={
-            navbarSticky
-              ? 'nav-options active flex justify-between m-auto items-center'
-              : 'nav-options flex justify-between m-auto items-center'
+            navbarSticky ? 'nav__options__outer active' : 'nav__options__outer'
           }
         >
-          <Link>
-            <FiIcons.FiInstagram
-              className={
-                navbarSticky ? 'instagram-icon active' : 'instagram-icon'
-              }
-              color={navbarSticky ? '#FFFF' : 'black'}
-            />
-          </Link>
-          <Link to="#" className="logo">
-            <img
-              src={Logo}
-              alt="logo-couveejon"
-              className={
-                navbarSticky ? 'logo-couveejson active' : 'logo-couveejson'
-              }
-            />
-          </Link>
-          <Link to="#" className="nav-bars" onClick={showSidebar}>
-            <FaIcons.FaBars
-              className={
-                navbarSticky ? 'nav-bars-icon active' : 'nav-bars-icon'
-              }
-              color={navbarSticky ? '#FFFF' : 'black'}
-            />
-          </Link>
+          <div className="nav-options">
+            <Link>
+              <FiIcons.FiInstagram
+                className={
+                  navbarSticky ? 'instagram-icon active' : 'instagram-icon'
+                }
+                color={navbarSticky ? '#FFFF' : 'black'}
+              />
+            </Link>
+            <Link to="#" className="logo">
+              <img
+                src={Logo}
+                alt="logo-couveejon"
+                className={
+                  navbarSticky ? 'logo-couveejson active' : 'logo-couveejson'
+                }
+              />
+            </Link>
+            <Link to="#" className="nav-bars" onClick={showSidebar}>
+              <FaIcons.FaBars
+                className={
+                  navbarSticky ? 'nav-bars-icon active' : 'nav-bars-icon'
+                }
+                color={navbarSticky ? '#FFFF' : 'black'}
+              />
+            </Link>
+          </div>
         </div>
 
         {/* Sidetop ---------------------------- */}
@@ -77,8 +77,14 @@ const Navbar = () => {
 
             {NavbarData.map((item, index) => {
               return (
-                <li key={index}>
-                  <NavLink to={item.path}>
+                <li key={index} className="nav__menu__each__items__container">
+                  <NavLink
+                    exact
+                    to={item.path}
+                    onClick={() => setSideShow(false)}
+                    className="nav__menu__items"
+                    activeClassName="nav__menu__items__active"
+                  >
                     <div className="nav-line-active"></div>
                     <p className="nav-title">{item.title}</p>
                   </NavLink>

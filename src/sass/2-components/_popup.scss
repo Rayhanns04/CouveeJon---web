@@ -9,10 +9,12 @@
   height: 100vh;
   transition: 850ms;
   z-index: 999;
+  left: 0;
 }
 
 .popup-container.active {
   bottom: 0;
+  left: 0;
   transition: 350ms;
 }
 

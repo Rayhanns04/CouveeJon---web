@@ -1,6 +1,12 @@
 @import '../1-helpers/variables';
 @import '../1-helpers/mixins';
 
+.story-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .story-container {
   display: flex;
   flex-direction: column-reverse;
@@ -12,20 +18,29 @@
 
   @include dekstop {
     position: unset;
-    width: 1130px;
+    flex-wrap: unset;
+    width: 100%;
+    max-width: 1366px;
     padding: 0;
-    margin: 90px 400px 90px 400px;
+    margin: 90px 0;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
-.story-img {
+.story-right {
   height: auto;
   margin: 80px 0 50px 0;
+  position: relative;
+
+  img {
+    width: 495px;
+    height: auto;
+  }
 
   @include dekstop {
+    margin: 80px 0 50px 40px;
     width: 495px;
   }
 }
@@ -105,10 +120,13 @@
   position: absolute;
   right: -100px;
   margin-top: 30px;
+  width: 274px !important;
+  height: auto;
 
   @include dekstop {
-    width: 274px;
+    width: 274px !important;
+    height: auto;
     margin-top: 50px;
-    right: 280px;
+    right: -25%;
   }
 }

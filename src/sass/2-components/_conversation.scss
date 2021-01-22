@@ -11,6 +11,14 @@
   margin-top: -40px;
 }
 
+.conversation-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
 .conversation-content {
   position: relative;
   margin: $padding-container-mobile;
@@ -20,10 +28,12 @@
   padding-top: 130px;
 
   @include dekstop {
+    width: 100%;
+    max-width: 1366px;
     padding-top: 0;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    margin: $margin-container-dekstop;
   }
 }
 
@@ -47,11 +57,12 @@
 
   @include dekstop {
     padding: 25px 33px;
-    right: 50px;
+    right: 180px;
     bottom: 50px;
     width: 370px;
     left: unset;
     margin: unset;
+
     h1 {
       font-size: map-get($font-sizes, s-large);
     }
@@ -61,6 +72,10 @@
 .conversation-img {
   max-width: 100%;
   margin-top: -20px;
+
+  @include dekstop {
+    margin-left: 100px;
+  }
 }
 
 .c-dcr {
@@ -68,7 +83,7 @@
   @include dekstop {
     display: block;
     position: absolute;
-    left: 40px;
+    left: 140px;
     bottom: -40px;
   }
 }

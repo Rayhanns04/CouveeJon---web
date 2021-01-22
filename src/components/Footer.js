@@ -6,36 +6,38 @@ import '../sass/main.scss';
 const Footer = () => {
   return (
     <>
-      <div className="master-footer">
-        <div className="footer-container">
-          <img src={Logo} alt="logo" className="footer-logo" />
-          <div className="links-container">
-            <h6>LINKS</h6>
+      <div className="footer-main">
+        <div className="footer-center">
+          <div className="footer-container">
+            <img src={Logo} alt="logo" className="footer-logo" />
+            <div className="links-container">
+              <h6>LINKS</h6>
 
-            <div className="link-ul">
-              <div>
-                <p>Homepage</p>
-                <p>Story</p>
-                <p>Menu</p>
-              </div>
-              <div>
-                <p>Location</p>
-                <p>Merchandise</p>
-                <p>Contact</p>
+              <div className="link-ul">
+                <div>
+                  <p>Homepage</p>
+                  <p>Story</p>
+                  <p>Menu</p>
+                </div>
+                <div>
+                  <p>Location</p>
+                  <p>Merchandise</p>
+                  <p>Contact</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="contact-container">
-            <h6>CONTACTS</h6>
-            <p>Hello@couvee.co.id</p>
-          </div>
+            <div className="contact-container">
+              <h6>CONTACTS</h6>
+              <p>Hello@couvee.co.id</p>
+            </div>
 
-          <div className="footer-sosmed-container">
-            <h6>SOCIALS</h6>
-            <div className="footer-instagram">
-              <FiIcons.FiInstagram />
-              <p>couvee.idn</p>
+            <div className="footer-sosmed-container">
+              <h6>SOCIALS</h6>
+              <div className="footer-instagram">
+                <FiIcons.FiInstagram />
+                <p>couvee.idn</p>
+              </div>
             </div>
           </div>
         </div>

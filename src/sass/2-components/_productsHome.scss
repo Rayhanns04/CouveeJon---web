@@ -1,6 +1,13 @@
 @import '../1-helpers/variables';
 @import '../1-helpers/mixins';
 
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .prd-hm-container {
   position: relative;
   padding: $padding-container-mobile;
@@ -11,8 +18,9 @@
   @include dekstop {
     position: unset;
     width: 1130px;
+    // width: 100%;
+    max-width: 1366px;
     padding: 0;
-    margin: 200px 400px 90px 400px;
     padding-bottom: 100px;
   }
 }
@@ -94,6 +102,12 @@
   width: 24px;
   height: auto;
   margin-right: 10px;
+}
+
+.prd-hm-btn-link {
+  display: flex;
+  align-items: center;
+  justify-self: center;
 }
 
 .prd-hm-btn {

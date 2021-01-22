@@ -5,12 +5,14 @@ import '../sass/main.scss';
 
 const Herosection = () => {
   return (
-    <>
-      <div className="hero">
-        <img src={HeroBanner} alt="hero-banner" className="hero-banner-img" />
-        <img src={TextLogo} alt="text-logo" className="text-logo absolute" />
-      </div>
-    </>
+    <div className="hero-container">
+      <img
+        src="https://www.couvee.co.id/wp-content/uploads/2019/08/hero-bg1.jpg"
+        alt="hero-banner"
+        className="hero-banner-img"
+      />
+      <img src={TextLogo} alt="text-logo" className="text-logo absolute" />
+    </div>
   );
 };
 

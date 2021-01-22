@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2020/01/5D3778CC-43E0-4CC7-8102-CC0B4984FD61-768x768.jpeg",
+        "title": "White",
+        "desc": "A classic caffe latte.",
+        "price": "15000"
+    },
+    {
+        "id": 2,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2020/01/0A8EFB09-10B3-42EF-87EA-536D5E122275-768x768.jpeg",
+        "title": "Black",
+        "desc": "Strong and bold americano, perfect to boosten up your morning!",
+        "price": "35000"
+    }
+]

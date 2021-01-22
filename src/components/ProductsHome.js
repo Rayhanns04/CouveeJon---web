@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../sass/main.scss';
 import * as GoIcons from 'react-icons/go';
+import { Link, NavLink } from 'react-router-dom';
 
 import SwiperCore, {
   Navigation,
@@ -50,7 +51,7 @@ const ProductsHome = () => {
   });
 
   return (
-    <div>
+    <div className="main-container">
       <Popup text={dialog} isOpen={isOpen} isClosed={() => setIsOpen(false)} />
       <div className="prd-hm-container">
         <h1 className="prd-hm-heading">PRODUCTS</h1>
@@ -75,10 +76,12 @@ const ProductsHome = () => {
           {RenderItem}
         </Swiper>
 
-        <div className="prd-hm-section">
-          <button className="prd-hm-btn mx-auto">
-            <p>ALL MENU</p>
-          </button>
+        <div className="prd-hm-section" to="/menu">
+          <Link to="/menu" className="prd-hm-btn-link">
+            <button className="prd-hm-btn mx-auto">
+              <p>ALL MENU</p>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

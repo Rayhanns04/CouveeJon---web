@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2019/11/232A4908-6056-45BD-8ED5-D03778D21EA5-768x768.jpg",
+        "title": "Flavored Caffe Latte",
+        "desc": "Our signature caffe latte sweetened with premium palm sugar.",
+        "price": "15000"
+    },
+    {
+        "id": 2,
+        "img": "https://i.imgur.com/nyjB1Uy.jpg",
+        "title": "Caramel Machiato",
+        "desc": "Caramel latte with less coffee and delightful caramel sauce on top.",
+        "price": "19000"
+    }
+]

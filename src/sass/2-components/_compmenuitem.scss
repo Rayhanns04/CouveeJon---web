@@ -1,0 +1,73 @@
+@import '../1-helpers/variables';
+@import '../1-helpers/mixins';
+
+.menuitem__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1140px;
+  margin-top: 50px;
+}
+
+.menuitem-each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+
+  img {
+    width: 336.66px;
+    height: 100%;
+    margin: 0 0 25px 0;
+  }
+
+  h1 {
+    font-family: map-get($fonts, light);
+    font-size: map-get($font-sizes, s-large) !important;
+  }
+}
+
+.menuitem-image-ctr {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+.menuitem-item-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 25px;
+  height: 20%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  @include dekstop {
+    top: 0;
+    height: 93%;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+  }
+
+  h3 {
+    font-family: map-get($fonts, regular);
+    font-size: map-get($font-sizes, s-large);
+    color: #ffffff;
+  }
+}
+
+.menuitem-item-overlay:hover {
+  @include dekstop {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.menuitem-item-overlay-icon {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}

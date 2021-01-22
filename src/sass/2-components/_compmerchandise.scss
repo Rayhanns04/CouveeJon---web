@@ -1,11 +1,18 @@
 @import '../1-helpers/variables';
 @import '../1-helpers/mixins';
 
+.mrch-main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
 .mrch-container {
   position: relative;
   padding: $padding-container-mobile;
   margin-bottom: 50px;
-  margin-top: 80px;
+  margin-top: -50px;
 
   h1 {
     font-family: map-get($fonts, regular);
@@ -21,10 +28,19 @@
   }
 
   @include dekstop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: unset;
-    width: 1130px;
-    padding: 0;
-    margin: 200px 400px 0 400px;
+    width: 100%;
+    max-width: 1366px;
+    padding: unset;
+    margin: 150px 0 0 0;
+
+    h1 {
+      align-self: flex-start;
+      margin-left: 130px;
+    }
   }
 }
 
@@ -34,7 +50,8 @@
   position: relative;
   margin-top: -30px;
   justify-content: space-between;
-  height: 1052px;
+  height: 1050px;
+  margin-left: 7px;
 
   img {
     width: 344px;
@@ -42,21 +59,17 @@
   }
 
   @include dekstop {
-    justify-content: space-between;
     flex-direction: row;
     height: unset;
-    margin-top: 100px;
+    width: 1090px;
+    margin-top: 40px;
 
     img:nth-child(2) {
-      top: 50px;
-      position: absolute;
-      right: 395px;
+      transform: translateY(30%);
     }
 
     img:nth-child(3) {
-      top: -50px;
-      position: absolute;
-      right: 0;
+      transform: translateY(-20%);
     }
   }
 }
@@ -114,7 +127,7 @@
   @include dekstop {
     flex-direction: row;
     height: unset;
-    margin: 100px auto;
+    margin: 150px auto;
 
     button:nth-child(2) {
       margin-top: unset;

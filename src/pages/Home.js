@@ -9,12 +9,13 @@ import Herosection from '../components/Herosection';
 import Navbar from '../components/Navbar/Navbar';
 import ProductsHome from '../components/ProductsHome';
 import Story from '../components/Story';
+import TestingComponent from '../components/TestingComponent';
 import '../sass/main.scss';
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
       <Herosection />
       <Story />
       <ProductsHome />

@@ -5,7 +5,7 @@ import * as BsIcons from 'react-icons/bs';
 
 const Story = () => {
   return (
-    <>
+    <div className="story-main">
       <div className="story-container">
         <div className="story-left">
           <h1 className="story-title">STORY</h1>
@@ -20,7 +20,8 @@ const Story = () => {
             <BsIcons.BsArrowRight />
           </button>
         </div>
-        <div className="story-img">
+
+        <div className="story-right">
           <img
             src="https://www.couvee.co.id/wp-content/uploads/2019/07/decoration-2.jpg"
             alt="decoration-2"
@@ -34,7 +35,7 @@ const Story = () => {
           className="sty-dcr-1"
         />
       </div>
-    </>
+    </div>
   );
 };
 

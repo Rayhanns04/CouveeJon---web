@@ -6,7 +6,7 @@ import * as RiIcons from 'react-icons/ri';
 const CompPromo = () => {
   const RenderItem = PromoData.map((item, index) => {
     return (
-      <div className="comp-promo-card">
+      <div className="comp-promo-card" key={index}>
         <div className="comp-promo-thumb">
           <img src={item.img} alt="promo-thumb" />
           <div className="tape-promo">Promo!</div>

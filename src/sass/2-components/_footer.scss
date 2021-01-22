@@ -1,6 +1,13 @@
 @import '../1-helpers/variables';
 @import '../1-helpers/mixins';
 
+.footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -141,7 +148,8 @@
 
   @include dekstop {
     justify-content: space-between;
-    align-items: unset;
+    align-items: center;
+    flex-direction: row;
     margin: $margin-container-dekstop;
   }
 }

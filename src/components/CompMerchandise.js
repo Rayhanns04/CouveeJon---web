@@ -6,7 +6,7 @@ import '../sass/main.scss';
 
 const CompMerchandise = () => {
   return (
-    <>
+    <div className="mrch-main">
       <div className="mrch-container">
         <h1>MERCHANDISE</h1>
 
@@ -21,7 +21,7 @@ const CompMerchandise = () => {
           <button>ALL ITEM</button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

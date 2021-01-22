@@ -1,7 +1,13 @@
 @import '../1-helpers/variables';
 @import '../1-helpers/mixins';
 
-.location-container {
+.lct-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.lct-container {
   display: flex;
   flex-direction: column-reverse;
   flex-wrap: wrap;
@@ -9,41 +15,46 @@
   margin-bottom: 50px;
   overflow: hidden;
   position: relative;
-  margin-top: -20px;
 
   @include dekstop {
     position: unset;
-    width: 1130px;
+    flex-wrap: unset;
+    width: 100%;
+    max-width: 1366px;
     padding: 0;
-    margin: 90px 400px 90px 400px;
+    margin: 90px 0;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
-.location-img {
+.lct-right {
   height: auto;
   margin: 80px 0 50px 0;
+  position: relative;
+
+  img {
+    width: 495px;
+    height: auto;
+  }
 
   @include dekstop {
+    margin: 80px 0 50px 40px;
     width: 495px;
   }
 }
 
-.location-title {
+.lct-title {
   font-family: map-get($fonts, regular);
   font-size: map-get($font-sizes, s-large);
   text-align: left;
   margin-bottom: 15px;
   display: block;
-
-  @include dekstop {
-    font-size: map-get($font-sizes, s-extra-large);
-  }
+  font-weight: map-get($font-weight, regular);
 }
 
-.location-text {
+.lct-text {
   font-family: map-get($fonts, regular);
   font-size: map-get($font-sizes, s-regular);
   text-align: left;
@@ -57,7 +68,7 @@
   }
 }
 
-.location-button {
+.lct-button {
   display: flex;
   justify-content: space-between;
   width: 200px;
@@ -65,7 +76,6 @@
   outline: none;
   background-color: $dark-brown;
   color: white;
-  position: relative;
 
   p {
     font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -77,37 +87,42 @@
 
   @include dekstop {
     outline: none;
-    position: relative;
   }
   transition: all 0.3s ease;
 }
 
-.location-button:hover {
+.lct-button:hover {
   transform: translateY(-5px);
 }
 
-.comp-location-dcr-1 {
+.sty-dcr-1 {
   position: absolute;
   z-index: -1;
   top: 450px;
   left: -10px;
+  height: 220px;
+  width: 220px;
 
   @include dekstop {
-    margin-top: -180px;
-    right: 780px;
+    margin-top: 380px;
     top: unset;
     left: unset;
+    height: unset;
+    width: unset;
   }
 }
 
-.comp-location-dcr-2 {
+.sty-dcr-2 {
   position: absolute;
   right: -100px;
   margin-top: 30px;
+  width: 274px !important;
+  height: auto;
 
   @include dekstop {
-    width: 274px;
+    width: 274px !important;
+    height: auto;
     margin-top: 50px;
-    right: 280px;
+    right: -25%;
   }
 }

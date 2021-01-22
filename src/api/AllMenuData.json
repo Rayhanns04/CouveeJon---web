@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.imgur.com/HNVO4hc.jpg",
+        "title": "Matcha Latte",
+        "desc": "Creamy and leafy, the best twist of Japanese classic drink.",
+        "price": "15000"
+    },
+    {
+        "id": 2,
+        "img": "https://i.imgur.com/XTgmxaa.jpg",
+        "title": "Red Velvet Latte",
+        "desc": "Our favorite red velvet drink with cream cheese notes.",
+        "price": "35000"
+    },
+    {
+        "id": 3,
+        "img": "https://i.imgur.com/qroKrON.jpg",
+        "title": "Dark Chocolate",
+        "desc": "Bold and intense dark chocolate with a bit touch of sweetness.",
+        "price": "18500"
+    },
+    {
+        "id": 4,
+        "img": "https://i.imgur.com/Ypu8DkA.jpg",
+        "title": "Black Cookie Latte",
+        "desc": "A classic drink with chocolate cookies and vanilla cream.",
+        "price": "15500"
+    },
+    {
+        "id": 5,
+        "img": "https://i.imgur.com/TaHZR92.jpg",
+        "title": "Mellaca",
+        "desc": "Our signature caffe latte sweetened with premium palm sugar.",
+        "price": "15000"
+    },
+    {
+        "id": 6,
+        "img": "https://i.imgur.com/nyjB1Uy.jpg",
+        "title": "Caramel Machiato",
+        "desc": "Caramel latte with less coffee and delightful caramel sauce on top.",
+        "price": "19000"
+    },
+    {
+        "id": 7,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2020/01/5D3778CC-43E0-4CC7-8102-CC0B4984FD61-768x768.jpeg",
+        "title": "White",
+        "desc": "A classic caffe latte.",
+        "price": "15000"
+    },
+    {
+        "id": 8,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2020/01/0A8EFB09-10B3-42EF-87EA-536D5E122275-768x768.jpeg",
+        "title": "Black",
+        "desc": "Strong and bold americano, perfect to boosten up your morning!",
+        "price": "35000"
+    },
+    {
+        "id": 9,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2019/11/CF4566E9-0DC2-43F1-ABC9-F1BED1F0A9CE-768x768.jpg",
+        "title": "Java",
+        "desc": "Creamy and leafy, the best twist of Japanese classic drink.",
+        "price": "15000"
+    },
+    {
+        "id": 10,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2019/11/8E1A4050-E354-4276-BEC8-F4A1A7EC88FA-768x768.jpg",
+        "title": "Necta",
+        "desc": "Our favorite red velvet drink with cream cheese notes.",
+        "price": "35000"
+    },
+    {
+        "id": 11,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2019/11/0FF934FE-E402-4914-9792-4AEE6E6F3DFF-768x768.jpg",
+        "title": "Caffe Mocha",
+        "desc": "Bold and intense dark chocolate with a bit touch of sweetness.",
+        "price": "18500"
+    },
+    {
+        "id": 12,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2020/01/E038E5CA-4906-4D70-80E2-255A54F46F1D-768x768.jpeg",
+        "title": "Everyday Latte",
+        "desc": "A classic drink with chocolate cookies and vanilla cream.",
+        "price": "15500"
+    },
+    {
+        "id": 13,
+        "img": "https://www.couvee.co.id/wp-content/uploads/2019/11/232A4908-6056-45BD-8ED5-D03778D21EA5-768x768.jpg",
+        "title": "Flavored Caffe Latte",
+        "desc": "Our signature caffe latte sweetened with premium palm sugar.",
+        "price": "15000"
+    }
+]

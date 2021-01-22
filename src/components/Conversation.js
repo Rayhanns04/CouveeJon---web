@@ -4,8 +4,8 @@ import '../sass/main.scss';
 
 const Conversation = () => {
   return (
-    <>
-      <div className="conversation-container">
+    <div className="conversation-container">
+      <div className="conversation-main">
         <div className="conversation-content">
           <img
             src={conversationImage}
@@ -25,7 +25,7 @@ const Conversation = () => {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
