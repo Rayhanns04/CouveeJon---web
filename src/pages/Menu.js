@@ -27,6 +27,7 @@ const Menu = () => {
 
           <div className="menu__content_nav">
             <NavLink
+              exact
               to={match.url}
               className="menu__nav__link"
               activeClassName="menu__nav__link_active"
@@ -35,7 +36,7 @@ const Menu = () => {
             </NavLink>
 
             <NavLink
-              to="/basic"
+              to="/menu/basic"
               className="menu__nav__link"
               activeClassName="menu__nav__link_active"
             >
@@ -43,7 +44,7 @@ const Menu = () => {
             </NavLink>
 
             <NavLink
-              to="/signature"
+              to="/menu/signature"
               className="menu__nav__link"
               activeClassName="menu__nav__link_active"
             >
@@ -51,7 +52,7 @@ const Menu = () => {
             </NavLink>
 
             <NavLink
-              to="/flavored-coffe"
+              to="/menu/flavored-coffe"
               className="menu__nav__link"
               activeClassName="menu__nav__link_active"
             >
@@ -59,7 +60,7 @@ const Menu = () => {
             </NavLink>
 
             <NavLink
-              to="/non-coffe"
+              to="/menu/non-coffe"
               className="menu__nav__link"
               activeClassName="menu__nav__link_active"
             >
@@ -68,16 +69,16 @@ const Menu = () => {
           </div>
 
           <Switch>
-            <Route path="/non-coffe">
+            <Route path="/menu/non-coffe">
               <NoCoffeMenu />
             </Route>
-            <Route path="/flavored-coffe">
+            <Route path="/menu/flavored-coffe">
               <FlavoredCoffeMenu />
             </Route>
-            <Route path="/signature">
+            <Route path="/menu/signature">
               <SignatureMenu />
             </Route>
-            <Route path="/basic">
+            <Route path="/menu/basic">
               <BasicMenu />
             </Route>
             <Route path={match.url}>

@@ -17,37 +17,52 @@
 .menu__content_nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 710px;
   margin-top: 30px;
+  padding: 20px;
+  width: 325px;
+  flex-wrap: wrap;
 
   h3 {
     font-family: map-get($fonts, regular);
     font-size: map-get($font-sizes, s-large);
+    margin: 0 35px;
+    padding: 20px 0;
   }
 
   .menu__nav__link_active::after {
     content: '';
     position: absolute;
-    bottom: -10px;
-    left: 0;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    bottom: 10px;
+    left: 25%;
     height: 4px;
-    width: 100%;
+    width: 50%;
+    right: 0;
     background-color: $dark-brown;
   }
 
-  // h3:after {
-  //   content: '';
-  //   position: absolute;
-  //   bottom: -10px;
-  //   left: 0;
-  //   height: 3px;
-  //   width: 100%;
-  //   background-color: $dark-brown;
-  // }
-
   .menu__nav__link {
     position: relative;
+  }
+
+  @include dekstop {
+    flex-wrap: nowrap;
+    width: 710px;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0;
+      padding: unset;
+    }
+
+    .menu__nav__link_active::after {
+      width: 100%;
+      left: 0;
+      bottom: -10px;
+    }
   }
 }

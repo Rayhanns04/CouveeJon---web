@@ -3,6 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home';
 import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer';
 import Menu from './pages/Menu';
 
 // Rafce
@@ -11,6 +12,7 @@ const App = () => {
     <>
       <Router>
         <Navbar />
+
         <Switch>
           <Route path="/menu">
             <Menu />
@@ -20,6 +22,8 @@ const App = () => {
             <Home />
           </Route>
         </Switch>
+
+        <Footer />
       </Router>
     </>
   );

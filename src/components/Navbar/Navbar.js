@@ -34,15 +34,15 @@ const Navbar = () => {
           }
         >
           <div className="nav-options">
-            <Link>
+            <a href="https://www.instagram.com/couvee.idn/" target="_blank">
               <FiIcons.FiInstagram
                 className={
                   navbarSticky ? 'instagram-icon active' : 'instagram-icon'
                 }
                 color={navbarSticky ? '#FFFF' : 'black'}
               />
-            </Link>
-            <Link to="#" className="logo">
+            </a>
+            <Link to="/" className="logo" exact>
               <img
                 src={Logo}
                 alt="logo-couveejon"
@@ -52,12 +52,23 @@ const Navbar = () => {
               />
             </Link>
             <Link to="#" className="nav-bars" onClick={showSidebar}>
-              <FaIcons.FaBars
-                className={
-                  navbarSticky ? 'nav-bars-icon active' : 'nav-bars-icon'
-                }
-                color={navbarSticky ? '#FFFF' : 'black'}
-              />
+              <a href="#" class="humberger-toggle basic-anime">
+                <span
+                  className={
+                    navbarSticky ? 'humberger__span active' : 'humberger__span'
+                  }
+                ></span>
+                <span
+                  className={
+                    navbarSticky ? 'humberger__span active' : 'humberger__span'
+                  }
+                ></span>
+                <span
+                  className={
+                    navbarSticky ? 'humberger__span active' : 'humberger__span'
+                  }
+                ></span>
+              </a>
             </Link>
           </div>
         </div>
@@ -70,7 +81,7 @@ const Navbar = () => {
 
           <ul className="nav-menu-items">
             <li>
-              <Link to="#">
+              <Link to="/">
                 <img src={Logo} alt="logo-couveejon" className="overlay-logo" />
               </Link>
             </li>

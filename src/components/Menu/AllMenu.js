@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import productHomeData from '../../api/ProductsHomeData.json';
 import * as GoIcons from 'react-icons/go';
 import Popup from '../Popup';
-import { useLocation } from 'react-router-dom';
 
 const AllMenu = () => {
   const [dialog, setDialog] = useState('');
